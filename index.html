@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>晒出河南家乡美</title>
+    <link rel="shortcut icon" href="image/logo.ico">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- Demo styles -->
+    <style>
+        .swiper {
+            position: relative;
+            left: -320px;
+            width: 640px;
+            height: 400px;
+        }
+        
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: rgba(38, 18, 12, 0.62);
+        }
+        
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .swiper-pagination-bullet {
+            height: 18px;
+            width: 18px;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header__logo--cut">
+            <img src="image/河南logo.png">
+        </div>
+        <div class="header__navbar">
+            <div class="header_Cloud"></div>
+            <div class="header_navitem">
+                <a class="header_hover">首&nbsp页</a>
+                <a href="news.html">介&nbsp绍</a>
+            </div>
+        </div>
+    </div>
+    <div class="bgWrap">
+        <div class="poster__concept">
+            <video loop="loop" muted="muted" autoplay>
+				<source src="audio/sh - 河之南 - 河南延时摄影联盟.mp4" type="audio/mp4">
+			</video>
+        </div>
+    </div>
+    <section class="new">
+        <div class="news__main">
+            <img src="image/第二块背景.jpg">
+            <h3>
+                河 南 风 光
+            </h3>
+        </div>
+        <div class="new_Boom">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <li>
+                            <a href="javascript:;"><img src="image/轮播1.jpg"></a>
+                        </li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li>
+                            <a href="javascript:;"><img src="image/轮播2.jpg"></a>
+                        </li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li>
+                            <a href="javascript:;"><img src="image/轮播3.jpg"></a>
+                        </li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li>
+                            <a href="javascript:;"><img src="image/轮播4.jpg"></a>
+                        </li>
+                    </div>
+                </div>
+                <div class="swiper-pagination">
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<!-- Swiper JS -->
+<script src="js/swiper-bundle.min.js"></script>
+
+<!-- 轮播图 -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+
+</html>
